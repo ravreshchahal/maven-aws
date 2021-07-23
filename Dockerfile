@@ -7,7 +7,4 @@ RUN curl --silent --show-error --fail "https://awscli.amazonaws.com/awscli-exe-l
 RUN unzip awscliv2.zip
 RUN ./aws/install
 
-COPY bin/startup.sh .
-RUN "./startup.sh"
-
 ENTRYPOINT [ "mvn" ]
